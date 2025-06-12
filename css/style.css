@@ -1,0 +1,365 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+a img,
+:link img,
+:visited img {
+    border: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul {
+    list-style: none
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: ""
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    color: #495A6D
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 40px
+}
+
+h1 a {
+    color: #556E82
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.5em;
+    text-align: justify
+}
+
+a {
+    color: #74899B;
+    text-decoration: none
+}
+
+a:hover {
+    padding-bottom: 1px;
+    color: #647787;
+    border-bottom: 1px solid #9a9cb5
+}
+
+a.nounderline:hover {
+    color: #9a9cb5;
+    border-bottom: none
+}
+
+a.underline {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #545976
+}
+
+a.underline:hover {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #9a9cb5
+}
+
+ul {
+    margin: 10px 0;
+    margin-left: 25px;
+    list-style-type: disc
+}
+
+li {
+    margin: 10px 0;
+    text-align: justify
+}
+
+#cover {
+    float: right;
+    margin: 20px 0 5px 30px
+}
+
+#wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-bottom: 80px
+}
+
+#title {
+    color: #556E82;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#journal {
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 32px
+}
+
+#teaser {
+    margin-top: 40px
+}
+
+#authors {
+    width: 100%;
+    margin-top: 30px
+}
+
+#authors tr {
+    height: 30px
+}
+
+#authors tr.mail {
+    height: 35px
+}
+
+#authors td {
+    text-align: center
+}
+
+#authors #affiliation {
+    font-size: 14px;
+    padding-top: 10px
+}
+
+#authors #affiliation span {
+    margin-left: 20px
+}
+
+#navigation {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+
+#navigation td {
+    padding: 15px;
+    padding-bottom: 0px
+}
+
+#bibtexsec {
+    font-family: "Courier", monospace;
+    white-space: pre;
+    font-size: 15px;
+    background-color: #f3f3f3;
+    padding: 20px;
+    overflow: scroll;
+    margin: 20px 0
+}
+
+.super {
+    vertical-align: super;
+    font-size: 70%
+}
+
+.bold {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-weight: bold
+}
+
+.italic,
+#journal {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-style: italic
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 15px 10
+}
+
+.center_medium {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+    margin: 15px 10
+}
+
+.center_smaller {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 15px 10
+}
+
+/* 1. Hacer más grande y espaciar el título de la sección */
+#gif-results h2 {
+    font-size: 1.8em;
+    /* aumenta el tamaño */
+    margin-top: 40px;
+}
+
+/* 2. Separar la tabla del contenido adyacente */
+#gif-results .gif-table {
+    margin: 20px auto 40px;
+    /* top, auto centrar, bottom */
+}
+
+/* 3. Añadir espacio dentro de cada celda */
+#gif-results .gif-table td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* 4. Opcional: incrementar ligeramente los títulos de cada GIF */
+#gif-results .gif-table h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Vídeos de resultados: misma altura, ancho automático */
+.result-video {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto 10px;
+    object-fit: contain;
+}
+
+/* ————————————————————————
+   Ajustes generales para tablas de resultados
+   ———————————————————————— */
+section#comparison-videos table,
+section#scene-videos table {
+    margin: 30px auto;
+    /* espacio arriba y abajo */
+    border-collapse: collapse;
+    /* sigue igual */
+    width: 100%;
+}
+
+section#comparison-videos td,
+section#scene-videos td {
+    padding: 15px;
+    /* espacio interno en cada celda */
+    vertical-align: top;
+    /* alinear títulos y vídeos arriba */
+}
+
+/* ————————————————————————
+   Títulos de sección (h2) más grandes y con espaciado
+   ———————————————————————— */
+section#comparison-videos>h2,
+section#scene-videos>h2 {
+    font-size: 1.8em;
+    /* más grande, similar a otros h2 */
+    margin: 40px 0 20px;
+    /* espacio antes y después */
+}
+
+/* ————————————————————————
+   Subtítulos de cada vídeo (h3) uniformes
+   ———————————————————————— */
+section#comparison-videos h3,
+section#scene-videos h3 {
+    font-size: 1.2em;
+    /* un poco más grande */
+    margin-bottom: 10px;
+    /* separa del vídeo */
+}

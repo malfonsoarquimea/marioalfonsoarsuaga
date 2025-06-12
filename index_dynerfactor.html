@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DyNeRFactor: Temporally Consistent Intrinsic Scene Decomposition for Dynamic NeRFs</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="javascript/scroll.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a id="top"></a>
+    <div id="wrapper">
+        <div id="header">
+            <div id="journal">Computers &amp; Graphics, 2024</div>
+            <div id="title"><a href="" class="nounderline">
+                    <b>DyNeRFactor: Temporally Consistent Intrinsic Scene Decomposition for Dynamic NeRFs</b><br>
+                </a></div>
+
+            <table id="authors">
+                <tbody>
+                    <tr>
+                        <td>Mario Alfonso Arsuaga<span class="super">1,2</span></td>
+                        <td>Jorge García<span class="super">3</span></td>
+                        <td>Andrea Castiella<span class="super">1</span></td>
+                        <td>Miguel Andrés Alonso<span class="super">1</span></td>
+                        <td>Elena Garcés<span class="super">2</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" id="affiliation">
+                            <span class="super">1</span> Arquimea Research Center, Spain&nbsp;&nbsp;
+                            <span class="super">2</span> Universidad Rey Juan Carlos (URJC), Móstoles, Madrid,
+                            Spain&nbsp;&nbsp;
+                            <span class="super">3</span> Universidad de Málaga, Málaga, Spain
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <a href="imgs/dynerfactor_teaser.png" class="nounderline">
+                <img style="width:1100px" class="center" src="imgs/dynerfactor_teaser.png" alt="Teaser" id="teaser">
+            </a>
+
+            <table id="navigation">
+                <tbody>
+                    <tr>
+                        <td><a href="#news">News</a></td>
+                        <td><a href="#abstract">Abstract</a></td>
+                        <td><a href="#resources">Resources</a></td>
+                        <td><a href="#results">Results</a></td>
+                        <td><a href="#bibtex">Bibtex</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="content">
+            <h1><a id="news">News</a></h1>
+            <ul>
+                <li><span class="italic">Feb, 2024</span>: Paper accepted in <em>Computers &amp; Graphics</em>.</li>
+                <li><span class="italic">Jun, 2025</span>: Website launched.</li>
+            </ul>
+
+            <h1><a id="abstract" href="#top">Abstract</a></h1>
+            <p>
+                We present a method for estimating the intrinsic components of a dynamic scene
+                captured with multi-view video sequences. Unlike previous work focused either on
+                static scenes or single view videos, our method simultaneously addresses the
+                challenges of dealing with the extra computational complexity given by the dynamic
+                motion while enabling novel view synthesis. Key to our method to make the output
+                temporally consistent is to encode the temporal information in a latent embedding
+                that leverages the redundant information of the dynamic scene. Our intrinsic
+                components includes diffuse and specular albedo, as well as scene geometry and
+                environment illumination. We explicitly account for light visibility, which we
+                estimate efficiently by considering dynamic and static points separately, making the
+                problem computationally tractable. We demonstrate the effectiveness of our
+                approach through quantitative and qualitative experiments, showing that it
+                outperforms the naïve per-frame decomposition approach in several real-world
+                scenes.
+            </p>
+
+            <h1><a id="resources" href="#top">Resources</a></h1>
+            <ul>
+                <li><a target="_blank"
+                        href="https://www.sciencedirect.com/science/article/pii/S0097849324001195">ScienceDirect
+                        [PDF]</a></li>
+            </ul>
+
+            <h1><a id="results" href="#top">Results</a></h1>
+
+            <!-- Vídeo overview -->
+            <section id="overview-video">
+                <h2>Overview Video</h2>
+                <p>A short explanatory video of the DyNeRFactor method, showcasing its motivation and key results.</p>
+                <video controls poster="imgs/dynerfactor_overview.jpg" style="width:1100px;">
+                </video>
+            </section>
+
+            <!-- Tabla de GIFs 4x2 -->
+            <section id="gif-results">
+                <h2>Key Result GIFs</h2>
+                <table class="gif-table" style="width:100%; text-align:center; border-collapse:collapse;">
+                    <tr>
+                        <td>
+                            <h3>Illumination 1</h3>
+                            <img src="gifs/dynerfactor_illum_01.gif" alt="Illumination 1" style="max-width:100%;">
+                        </td>
+                        <td>
+                            <h3>Illumination 2</h3>
+                            <img src="gifs/dynerfactor_illum_02.gif" alt="Illumination 2" style="max-width:100%;">
+                        </td>
+                        <td>
+                            <h3>Illumination 3</h3>
+                            <img src="gifs/dynerfactor_illum_03.gif" alt="Illumination 3" style="max-width:100%;">
+                        </td>
+                        <td>
+                            <h3>Illumination 4</h3>
+                            <img src="gifs/dynerfactor_illum_04.gif" alt="Illumination 4" style="max-width:100%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Orbit View 1</h3>
+                            <img src="gifs/dynerfactor_orbit_01.gif" alt="Orbit View 1" style="max-width:100%;">
+                        </td>
+                        <td>
+                            <h3>Orbit View 2</h3>
+                            <img src="gifs/dynerfactor_orbit_02.gif" alt="Orbit View 2" style="max-width:100%;">
+                        </td>
+                        <td>
+                            <h3>Orbit View 3</h3>
+                            <img src="gifs/dynerfactor_orbit_03.gif" alt="Orbit View 3" style="max-width:100%;">
+                        </td>
+                        <td>
+                            <h3>Orbit View 4</h3>
+                            <img src="gifs/dynerfactor_orbit_04.gif" alt="Orbit View 4" style="max-width:100%;">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <h1><a id="bibtex" href="#top">Bibtex</a></h1>
+            <div id="bibtexsec">
+                @article{alfonso2024dynerfactor,
+                title={DyNeRFactor: Temporally consistent intrinsic scene decomposition for dynamic NeRFs},
+                author={Alfonso-Arsuaga, Mario and Garc{\'\i}a-Gonz{\'a}lez, Jorge and Castiella-Aguirrezabala, Andrea
+                and Alonso, Miguel Andr{\'e}s and Garc{\'e}s, Elena},
+                journal={Computers \& Graphics},
+                volume={122},
+                pages={103984},
+                year={2024},
+                publisher={Elsevier}
+                }
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
